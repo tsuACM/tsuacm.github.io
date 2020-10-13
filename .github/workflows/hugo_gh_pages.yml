@@ -26,36 +26,32 @@ jobs:
           submodules: true  # Fetch Hugo themes
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-    # Step 2 - navigate to the hugo site
-    - name: cd to hugo site
-      run: cd tsuacm
-
-    # Step 3 - Sets up the latest version of Hugo
+    # Step 2 - Sets up the latest version of Hugo
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
           hugo-version: 'latest'
 
-    # Step 4 - Clean and don't fail
+    # Step 3 - Clean and don't fail
     - name: Clean public directory
-      run: rm -rf public
+      run: rm -rf tsuacm/public
 
-    # Step 5 - Builds the site using the latest version of Hugo
+    # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
     - name: Build
-      run: hugo --minify
+      run: cd tsuacm && hugo --minify
 
-    # Step 6 - Create name file
+    # Step 5 - Create name file
     #- name: Create cname file
     #  run: echo 'freshswift.net' > public/CNAME
 
-    # Step 7 - Add the .nojekyll file to stop jekyll from running
+    # Step 6 - Add the .nojekyll file to stop jekyll from running
     - name: Create .nojekyll file
-      run: touch public/.nojekyll
+      run: touch tsuacm/public/.nojekyll
 
-    # Step 8 - Push our generated site to our gh-pages branch
+    # Step 7 - Push our generated site to our gh-pages branch
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: tsuacm/public
