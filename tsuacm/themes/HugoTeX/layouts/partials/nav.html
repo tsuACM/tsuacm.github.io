@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <div class="nav">
+    <ul class="nav-links">
+      {{ range .Site.Params.nav }}
+        {{ if .icon }}
+          <li><a href="{{ .url | relLangURL }}" name="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
+        {{ else }}
+          <li><a href="{{ .url | relLangURL }}" name="{{ .name }}">{{ .name }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,42 @@
+{
+  "theme": "HugoTeX",
+  "baseURL": "https://www.example.com",
+  "title": "Association for Computing Machinery",
+  "paginate": 3,
+  "languageCode": "en",
+  "enableInlineShortcodes": true,
+  "footnoteReturnLinkContents": "^",
+  "author": {
+    "name": "Truman State University ACM",
+    "abstract": "This is the website for the Truman State chapter of the Association for Computing Machinery. You will find meeting updates here in addition to other important announcements related to Truman State ACM."
+  },
+  "taxonomies": {
+    "category": "categories",
+    "tag": "tags",
+    "series": "series"
+  },
+  "params": {
+    "nav": [
+      {
+        "url": "/",
+        "name": "Home"
+      },
+      {
+        "url": "/about",
+        "name": "About"
+      },
+      {
+        "url": "/posts",
+        "name": "Posts"
+      },
+      {
+        "url": "http://cs.truman.edu",
+        "name": "Truman CS Website"
+      }
+    ],
+    "logo": {
+      "url": "tru_acm_diamond.png",
+      "width": "100px"
+    }
+  }
+  }

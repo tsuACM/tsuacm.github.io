@@ -1,0 +1,22 @@
+theme = "HugoTeX"
+baseURL = "https://www.example.com"
+title = "Association for Computing Machinery"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+[params]
+  [params.nav]
+  url = "https://cs.truman.edu"
+  name = "Truman CS Website"
+
+[author]
+  name = "Truman State University"
+  abstract = "This is the website for the Truman State chapter of the Association for Computing Machinery. You will find meeting updates here in addition to other important announcements related to Truman State ACM."
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
