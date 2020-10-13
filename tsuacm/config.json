@@ -15,6 +15,13 @@
     "tag": "tags",
     "series": "series"
   },
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  },
   "params": {
     "nav": [
       {
@@ -39,4 +46,4 @@
       "width": "100px"
     }
   }
-  }
+}
