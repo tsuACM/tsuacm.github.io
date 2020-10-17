@@ -42,4 +42,4 @@
 
 1. Download SVGs from https://github.com/FortAwesome/Font-Awesome/tree/master/svgs
 2. Place them in the /fontawesome directory
-3. Call them using the shortcode `{{ fontawesome name }}` where `name` is the filename without the `.svg` extension.
+3. Call them using the shortcode `{{% fontawesome name %}}` where `name` is the filename without the `.svg` extension.
