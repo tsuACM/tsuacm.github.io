@@ -35,3 +35,9 @@
 7. When the changes are as you like them, commit and push to your branch. ***DO NOT BUILD THE SITE ON YOUR MACHINE WITH THE `hugo` COMMAND!*** The GitHub servers will do this for you.
 8. Create a PR from your branch to main. It will automatically run a build against your branch to make sure it works. An approval and successful build are required before a merge.
 9.  Once approved, merge. You can also optionally delete your branch after it's merged. The site will be automatically built and deployed.
+
+# Adding new FontAwesome Icons
+
+1. Download SVGs from https://github.com/FortAwesome/Font-Awesome/tree/master/svgs
+2. Place them in the /fontawesome directory
+3. Call them using the shortcode `{{ fontawesome name }}` where `name` is the filename without the `.svg` extension.
