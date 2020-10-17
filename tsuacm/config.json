@@ -1,13 +1,13 @@
 {
   "theme": "HugoTeX",
-  "baseURL": "https://tsuacm.github.io/",
+  "baseURL": "https://tsuacm.github.io",
   "title": "Association for Computing Machinery",
   "paginate": 3,
   "languageCode": "en",
   "enableInlineShortcodes": true,
   "footnoteReturnLinkContents": "^",
   "author": {
-    "name": "Truman State University ACM",
+    "name": "Truman State University Student Chapter of ACM",
     "abstract": "This is the website for the Truman State chapter of the Association for Computing Machinery. You will find meeting updates here in addition to other important announcements related to Truman State ACM."
   },
   "taxonomies": {
@@ -23,6 +23,7 @@
     }
   },
   "params": {
+    "favicon": "/images/tru_acm_diamond.png",
     "nav": [
       {
         "url": "/",
@@ -33,16 +34,29 @@
         "name": "About"
       },
       {
-        "url": "/posts",
-        "name": "Posts"
+        "url": "/events",
+        "name": "Events"
+      },
+      {
+        "url": "/articles",
+        "name": "Articles"
       },
       {
         "url": "http://cs.truman.edu",
-        "name": "Truman CS Website"
+        "name": "Truman CS Website",
+        "iconAfter": "external-link-alt",
+        "target": "_blank"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "github",
+        "text": "GitHub",
+        "url": "https://github.com/tsuACM"
       }
     ],
     "logo": {
-      "url": "tru_acm_diamond.png",
+      "url": "/images/tru_acm_diamond.png",
       "width": "100px"
     }
   }

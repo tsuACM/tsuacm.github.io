@@ -3,9 +3,11 @@
     <ul class="nav-links">
       {{ range .Site.Params.nav }}
         {{ if .icon }}
-          <li><a href="{{ .url | relLangURL }}" name="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
+          <li><a class="iconbefore" href="{{ .url | relLangURL }}" name="{{ .name }}" {{ if .target }}target="{{ .target }}"{{ end }}>{{ partial "fontawesome.html" .icon }}{{ .name }}</a></li>
+        {{ else if .iconAfter }}
+          <li><a class="iconafter" href="{{ .url | relLangURL }}" name="{{ .name }}" {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}{{ partial "fontawesome.html" .iconAfter }}</a></li>
         {{ else }}
-          <li><a href="{{ .url | relLangURL }}" name="{{ .name }}">{{ .name }}</a></li>
+          <li><a href="{{ .url | relLangURL }}" name="{{ .name }}">{{ .name }} {{ if .target }}target="{{ .target }}"{{ end }}</a></li>
         {{ end }}
       {{ end }}
     </ul>
