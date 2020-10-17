@@ -50,6 +50,11 @@
     ],
     "socials": [
       {
+        "icon": "instagram",
+        "text": "Instagram",
+        "url": "https://instagram.com/acm_truman"
+      },
+      {
         "icon": "github",
         "text": "GitHub",
         "url": "https://github.com/tsuACM"

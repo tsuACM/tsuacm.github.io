@@ -3,7 +3,7 @@
       {{ if .Site.Params.socials }}
         <div class="credits socials">
           {{ range .Site.Params.socials }}
-          <a href="{{.url }}" target="_blank">{{ partial "fontawesome.html" .icon }}</a>
+          <a href="{{.url }}" title="{{.text}}" target="_blank">{{ partial "fontawesome.html" .icon }}</a>
           {{ end }}
         </div>
       {{ end }}
