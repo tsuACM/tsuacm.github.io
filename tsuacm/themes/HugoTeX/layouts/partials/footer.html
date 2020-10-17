@@ -3,12 +3,12 @@
       {{ if .Site.Params.socials }}
         <div class="credits socials">
           {{ range .Site.Params.socials }}
-          <a href="{{.url }}">{{ partial "fontawesome.html" .icon }}</a>
+          <a href="{{.url }}" target="_blank">{{ partial "fontawesome.html" .icon }}</a>
           {{ end }}
         </div>
       {{ end }}
         <div class="credits theme-by">
-            Powered By <a href="https://gohugo.io">Hugo</a>
+            Powered By <a href="https://gohugo.io" target="_blank" class="iconafter">Hugo{{ partial "fontawesome.html" "external-link-alt" }}</a>
         </div>
         <div class="credits copyright">
             <a href="{{ .Site.BaseURL }}about">{{ .Site.Author.name }}</a> &copy; {{ now.Format "2006"}}
