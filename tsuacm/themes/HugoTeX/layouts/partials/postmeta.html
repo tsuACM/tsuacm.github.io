@@ -1,9 +1,9 @@
 <span class="meta-post">
-  {{ if .Params.date }}<i class="fa fa-calendar-alt"></i>{{ .Params.date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }} <br> {{ end }}
+  {{ if .Params.date }}<span class="calIcon">{{ partial "fontawesome.html" "calendar-alt" }}</span>{{ .Params.date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }} <br> {{ end }}
   {{ if .Params.categories }}
-    <i class="fa fa-folder-open"></i>
+  <span class="folderIcon">{{ partial "fontawesome.html" "folder-open" }}</span>
     {{ range .Params.categories }}
-      <a href="{{ $.Site.BaseURL }}/categories/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+      <a href="{{ "categories" | relURL }}/{{ . | urlize }}/">{{ . }}</a>&nbsp;
     {{ end }}
   {{ end }}
 </span>
