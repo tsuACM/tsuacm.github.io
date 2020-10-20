@@ -18,6 +18,6 @@ We are the Association for Computing Machinery, Truman State University Student 
 ## Contact Us
 
 + Email: [acm@truman.edu](mailto:acm@truman.edu)
-+ <a href="https://join.slack.com/t/trumanacm/signup" target="_blank" class="iconafter">Join our Slack Workspace{{% fontawesome "external-link-alt" %}} </a>
++ {{< externallink url="https://join.slack.com/t/trumanacm/signup" text="Join our Slack Workspace" >}}
     + A valid `@truman.edu` email address is required to join via this link.
     + If you do not have a valid `@truman.edu` email address and would like to join us on Slack, please email us with your request.

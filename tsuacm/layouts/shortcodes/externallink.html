@@ -1,0 +1,1 @@
+<a href="{{ .Get "url"}}" {{if (.Get "title") }}title="{{.Get "title" }}"{{end}}target="_blank" class="iconafter">{{.Get "text"}}{{ partial "fontawesome.html" "external-link-alt" }}</a>

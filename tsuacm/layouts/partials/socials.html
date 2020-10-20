@@ -1,0 +1,7 @@
+{{ if .Site.Params.socials }}
+<div class="socials">
+  {{ range .Site.Params.socials }}
+  <a href="{{.url }}" title="{{.text}}" target="_blank">{{ partial "fontawesome.html" .icon }}</a>
+  {{ end }}
+</div>
+{{ end }}

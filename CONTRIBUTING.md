@@ -15,7 +15,10 @@
     + If you want to show drafts as well, run `hugo server -D` instead.
     + A link to the test server will be shown, and it will update on any changes made.
 6. Open the created markdown file to edit. Proper frontmatter should be added based on the type, although you can always change/add/remove it. See the Hugo documentation for more on this.
-    + Note: Style all links to external sources as follows: `<a href="url" target="_blank" class="iconafter">Text{{% fontawesome "external-link-alt" %}}</a>`
+    + Note: Style all links to external sources with the following shortcode: {{< externallink url="https://example.com" text="The Link Text" title="Hover Text" >}}
+        + `url` is the URL to link to
+        + `text` is the text (or other HTML contents) of the link
+        + `title` is optional and is the text shown on hover
 7. Put any static resources (images, other things that don't need to be processed) in the `static` folder.
     + Things in this folder are hosted starting from the site root. For example, `static/images/myimage.png` is hosted at `https://mysite.com/images/myimage.png`
 8. When the changes are as you like them, commit and push to your branch. ***DO NOT BUILD THE SITE ON YOUR MACHINE WITH THE `hugo` COMMAND!*** The GitHub servers will do this for you.
@@ -31,7 +34,10 @@
     + If you want to show drafts as well, run `hugo server -D` instead.
     + A link to the test server will be shown, and it will update on any changes made.
 5. Open the markdown file(s) you want to edit and do so.
-    + Note: Style all links to external sources as follows: `<a href="url" target="_blank" class="iconafter">Text{{% fontawesome "external-link-alt" %}}</a>`
+    + Note: Style all links to external sources with the following shortcode: {{< externallink url="https://example.com" text="The Link Text" title="Hover Text" >}}
+        + `url` is the URL to link to
+        + `text` is the text (or other HTML contents) of the link
+        + `title` is optional and is the text shown on hover
 6. Put any static resources (images, other things that don't need to be processed) in the `static` folder.
     + Things in this folder are hosted starting from the site root. For example, `static/images/myimage.png` is hosted at `https://mysite.com/images/myimage.png`
 7. When the changes are as you like them, commit and push to your branch. ***DO NOT BUILD THE SITE ON YOUR MACHINE WITH THE `hugo` COMMAND!*** The GitHub servers will do this for you.

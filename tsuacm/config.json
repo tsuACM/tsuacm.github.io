@@ -44,8 +44,7 @@
       {
         "url": "http://cs.truman.edu",
         "name": "Truman CS Website",
-        "iconAfter": "external-link-alt",
-        "target": "_blank"
+        "external": true
       }
     ],
     "socials": [

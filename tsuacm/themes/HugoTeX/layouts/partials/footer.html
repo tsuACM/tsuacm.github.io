@@ -1,14 +1,8 @@
 <footer>
     <div class="container">
-      {{ if .Site.Params.socials }}
-        <div class="credits socials">
-          {{ range .Site.Params.socials }}
-          <a href="{{.url }}" title="{{.text}}" target="_blank">{{ partial "fontawesome.html" .icon }}</a>
-          {{ end }}
-        </div>
-      {{ end }}
+        {{ partial "socials.html" . }}
         <div class="credits theme-by">
-            Powered By <a href="https://gohugo.io" target="_blank" class="iconafter">Hugo{{ partial "fontawesome.html" "external-link-alt" }}</a>
+            Powered By {{ partial "externallink.html" (dict "contenxt" . "url" "https://gohugo.io" "text" "Hugo" "title" "Hugo Website") }}
         </div>
         <div class="credits copyright">
             <a href="{{ "about" | relURL }}">{{ .Site.Author.name }}</a> &copy; {{ now.Format "2006"}}
