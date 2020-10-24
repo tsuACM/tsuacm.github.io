@@ -20,7 +20,9 @@
         + `text` is the text (or other HTML contents) of the link
         + `title` is optional and is the text shown on hover
 7. Put any static resources (images, other things that don't need to be processed) in the `static` folder.
-    + Things in this folder are hosted starting from the site root. For example, `static/images/myimage.png` is hosted at `https://mysite.com/images/myimage.png`
+    + Things in this folder are hosted starting from the site root.
+    + For example, `static/images/myimage.png` is hosted at `https://mysite.com/images/myimage.png`
+    + Link to these items with relative URLs from the site root: `/images/myimage.png`
 8. When the changes are as you like them, commit and push to your branch. ***DO NOT BUILD THE SITE ON YOUR MACHINE WITH THE `hugo` COMMAND!*** The GitHub servers will do this for you.
 9.  Create a PR from your branch to main. It will automatically run a build against your branch to make sure it works. An approval and successful build are required before a merge.
 10.  Once approved, merge. You can also optionally delete your branch after it's merged. The site will be automatically built and deployed.
@@ -39,7 +41,9 @@
         + `text` is the text (or other HTML contents) of the link
         + `title` is optional and is the text shown on hover
 6. Put any static resources (images, other things that don't need to be processed) in the `static` folder.
-    + Things in this folder are hosted starting from the site root. For example, `static/images/myimage.png` is hosted at `https://mysite.com/images/myimage.png`
+    + Things in this folder are hosted starting from the site root.
+    + For example, `static/images/myimage.png` is hosted at `https://mysite.com/images/myimage.png`
+    + Link to these items with relative URLs from the site root: `/images/myimage.png`
 7. When the changes are as you like them, commit and push to your branch. ***DO NOT BUILD THE SITE ON YOUR MACHINE WITH THE `hugo` COMMAND!*** The GitHub servers will do this for you.
 8. Create a PR from your branch to main. It will automatically run a build against your branch to make sure it works. An approval and successful build are required before a merge.
 9.  Once approved, merge. You can also optionally delete your branch after it's merged. The site will be automatically built and deployed.
