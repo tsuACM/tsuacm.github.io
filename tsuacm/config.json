@@ -22,6 +22,9 @@
       }
     }
   },
+  "permalinks":{
+    "minutes": "/minutes/:year/:month/:day"
+  },
   "params": {
     "favicon": "/images/tru_acm_diamond.png",
     "nav": [
