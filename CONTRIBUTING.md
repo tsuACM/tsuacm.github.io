@@ -87,3 +87,27 @@
 1. Download SVGs from https://github.com/FortAwesome/Font-Awesome/tree/master/svgs
 2. Place them in the /fontawesome directory
 3. Call them using the shortcode `{{% fontawesome name %}}` where `name` is the filename without the `.svg` extension.
+
+# Updating submodule Theme
+
+`cd` to the theme's directory and use the normal `git` commands to pull from the upstream branch.
+
+# Removing Submodule Theme
+
+```
+git submodule deinit path/to/the_theme
+git rm path/to/the_theme
+```
+
+And commit the changes.
+
+# Adding new Theme as Submodule
+
+```
+cd tsuacm/themes
+git submodule add <clone url>
+```
+
+And commit the changes.
+
+You will likely have to change the `layouts` for the new theme.
