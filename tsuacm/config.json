@@ -27,6 +27,7 @@
   },
   "params": {
     "favicon": "/images/tru_acm_diamond.png",
+    "notFoundString": "Error 404: Page Not Found",
     "nav": [
       {
         "url": "/",

@@ -1,5 +1,7 @@
 <meta charset="utf-8" />
-{{ if .Title }}
+{{if eq ( .Permalink | relURL ) "/404.html"}}
+  <title>{{ .Site.Params.notFoundString | default "Error 404" }} - {{ .Site.Title }}</title>
+{{ else if .Title }}
   <title>{{ .Title }} - {{ .Site.Title }}</title>
 {{ else }}
   <title>{{ .Site.Title }}</title>

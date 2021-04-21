@@ -8,6 +8,9 @@
      alt="{{ .Site.Params.logo.alt }}">
 </a>
 {{ end }}
+{{if eq ( .Permalink | relURL ) "/404.html"}}
+  {{ $.Scratch.Set "title" ( .Site.Params.notFoundString | default "Error 404" )}}
+{{ else }}
 {{ if .IsHome }}
 {{ if .Site.Params.homeTitle }}
   {{ $.Scratch.Set "title" .Site.Params.homeTitle }}
@@ -16,6 +19,7 @@
 {{ end }}
 {{ else }}
 {{ $.Scratch.Set "title" .Title }}
+{{ end }}
 {{ end }}
 
 {{ $title := $.Scratch.Get "title" }}
