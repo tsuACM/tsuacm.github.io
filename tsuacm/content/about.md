@@ -1,6 +1,5 @@
 ---
 title: "About"
-author: "Truman State ACM"
 aliases: ["about-us", "contact"]
 ---
 

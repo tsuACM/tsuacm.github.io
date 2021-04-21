@@ -6,6 +6,8 @@ categories: ["Minutes"]
 summary: "Minutes from the meeting on 16 November 2020."
 tags: []
 draft: false
+# description:
+nodescription: true
 ---
 
 ## Notes from the Executive Board

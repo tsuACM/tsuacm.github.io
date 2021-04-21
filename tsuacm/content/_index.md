@@ -1,6 +1,3 @@
----
-author: "Truman State ACM"
----
 ## Pardon the Dust
 
 This website is brand new and still a work in progress. Please report any faults ("bugs") to [acm@truman.edu](mailto:acm@truman.edu).

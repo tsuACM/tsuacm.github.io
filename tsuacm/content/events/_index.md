@@ -1,6 +1,5 @@
 ---
 title: "Events"
-author: "Truman State ACM"
 ---
 
 ## Hackathons
