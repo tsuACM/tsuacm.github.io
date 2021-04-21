@@ -13,7 +13,8 @@
   "taxonomies": {
     "category": "categories",
     "tag": "tags",
-    "series": "series"
+    "series": "series",
+    "Project Type": "proj_type"
   },
   "markup": {
     "goldmark": {
@@ -23,7 +24,8 @@
     }
   },
   "permalinks":{
-    "minutes": "/minutes/:year/:month/:day"
+    "minutes": "/minutes/:year/:month/:day",
+    "proj_type": "/projects/types/:slug/"
   },
   "params": {
     "favicon": "/images/tru_acm_diamond.png",
@@ -40,6 +42,10 @@
       {
         "url": "/events",
         "name": "Events"
+      },
+      {
+        "url": "/projects",
+        "name": "Projects"
       },
       {
         "url": "/articles",

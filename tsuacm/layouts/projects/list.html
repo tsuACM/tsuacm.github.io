@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="container" role="main">
+  {{ if .Content }}
+  <article class="article" class="blog-post">
+    {{ .Content }}
+  </article>
+  {{ end }}
+    <div class="posts-list">
+{{ range $term, $tax := .Site.Taxonomies.proj_type }}
+      {{ with $.Site.GetPage (printf "/%s" $term) }}
+        <h2>{{ .Page.Title }}</h2>
+        <ul>
+          {{ range $tax.Pages }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Page.Title }} ({{ .Params.proj_semester }})</a>
+              {{ if .Params.description }}<ul><li>{{ .Params.description }}</li></ul>{{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+{{ end }}
+</div>
+{{ end }}

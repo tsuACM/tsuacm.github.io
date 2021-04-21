@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container" role="main">
+    <div class="posts-list">
+          <ul>
+          {{ range .Pages }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Page.Title }} ({{ .Params.proj_semester }})</a>
+              {{ if .Params.description }}<ul><li>{{ .Params.description }}</li></ul>{{ end }}
+            </li>
+          {{ end }}
+        </ul>
+</div>
+{{ end }}
