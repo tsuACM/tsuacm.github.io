@@ -5,7 +5,7 @@
             Powered By {{ partial "externallink.html" (dict "contenxt" . "url" "https://gohugo.io" "text" "Hugo" "title" "Hugo Website") }}
         </div>
         <div class="credits copyright">
-            <a href="{{ "about" | relURL }}">{{ .Site.Author.name }}</a> &copy; {{ now.Format "2006"}}
+            &copy; {{ now.Format "2006"}} <a href="{{ "about" | relURL }}">{{ .Site.Author.name }}</a>
         </div>
     </div>
 </footer>
