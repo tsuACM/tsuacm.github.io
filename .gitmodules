@@ -1,0 +1,3 @@
+[submodule "tsuacm/themes/HugoTeX"]
+	path = tsuacm/themes/HugoTeX
+	url = https://github.com/7ma7X/HugoTeX.git

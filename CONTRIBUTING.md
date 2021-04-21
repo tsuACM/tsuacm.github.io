@@ -1,5 +1,6 @@
 # Prerequisites
 0. Make sure [hugo](https://gohugo.io/getting-started/installing) is installed on your computer. The site is always built on the server against the latest version of hugo.
+1. Clone the repository with `git clone --recurse-submodules <url>`. See [this StackOverflow Answer](https://stackoverflow.com/a/4438292) for more info.
 
 # Adding meeting minutes
 
