@@ -3,7 +3,6 @@ title: Final Meeting of Fall 2020
 date: 2020-11-16
 author: Brandon Ingli
 categories: ["Minutes"]
-summary: "Minutes from the meeting on 16 November 2020."
 tags: []
 draft: false
 # description:
