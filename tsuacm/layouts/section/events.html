@@ -1,10 +1,12 @@
+{{/* HugoTeX layouts/_default/single.html */}}
+
 {{ define "main" }}
   <div class="container" role="main">
     <article class="article" class="blog-post">
       <div class="postmeta">
         {{ partial "postmeta.html" . }}
       </div>
-      {{ partial "toc.html" . }}
+      {{ .Content }}
 
       {{ if .Params.tags }}
         <div class="blog-tags">

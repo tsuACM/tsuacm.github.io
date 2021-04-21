@@ -5,5 +5,7 @@ author: "Truman State ACM"
 categories: []
 tags: []
 draft: true
+# description:
+# nodescription: true
 ---
 

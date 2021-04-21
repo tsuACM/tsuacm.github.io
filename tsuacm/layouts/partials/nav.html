@@ -3,7 +3,7 @@
     <ul class="nav-links">
       {{ range .Site.Params.nav }}
       {{ if .external}}
-          <li>{{ partial "externallink.html" (dict "contenxt" . "url" .url "text" .name) }}</li>
+          <li>{{ partial "externallink.html" (dict "context" . "url" .url "text" .name) }}</li>
         {{ else if .icon }}
           <li><a class="iconbefore" href="{{ .url | relLangURL }}" name="{{ .name }}" {{ if .target }}target="{{ .target }}"{{ end }}>{{ partial "fontawesome.html" .icon }}{{ .name }}</a></li>
         {{ else if .iconAfter }}

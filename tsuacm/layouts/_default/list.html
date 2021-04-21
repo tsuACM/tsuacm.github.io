@@ -10,6 +10,12 @@
       {{ range .Paginator.Pages }}
         {{ partial "preview.html" . }}
       {{ end }}
+
+      {{ if eq .Paginator.TotalPages 0 }}
+      <article class="post-preview">
+        <h2 class="none-found-title">None Found</h2>
+      </article>
+      {{ end }}
       </div>
     {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
     <ul class="pager">

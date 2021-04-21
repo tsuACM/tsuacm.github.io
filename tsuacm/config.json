@@ -1,6 +1,6 @@
 {
   "theme": "HugoTeX",
-  "baseURL": "https://tsuacm.github.io",
+  "baseURL": "https://tsuacm.github.io/",
   "title": "Association for Computing Machinery",
   "paginate": 3,
   "languageCode": "en",
