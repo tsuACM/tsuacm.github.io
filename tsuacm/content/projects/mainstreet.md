@@ -2,6 +2,8 @@
 title: "Main Street Kirksville Website"
 type: projects
 date: 2021-04-20
+group: "Web Devs" # ACM, Web Devs, Game Devs, etc.
+categories: ["Projects"]
 proj_type: "Web Development"
 proj_semester: Spring 2021
 proj_link: "https://www.mainstreetkirksville.com"

@@ -1,10 +1,15 @@
 <span class="meta-post">
   {{ if .Params.date }}<span class="icon calIcon">{{ partial "fontawesome.html" "calendar-alt" }}</span>{{ .Params.date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }} <br> {{ end }}
   {{ if .Params.author }}<span class="icon authorIcon">{{ partial "fontawesome.html" "user-alt" }}</span> {{ .Params.author }} <br> {{ end }}
+  {{ if .Params.group }}<span class="icon groupIcon">{{ partial "fontawesome.html" "users" }}</span> <a href="{{ "groups" | relURL }}/{{ .Params.group | urlize }}/">{{ .Params.group }}</a> <br> {{ end }}
   {{ if .Params.categories }}
   <span class="icon folderIcon">{{ partial "fontawesome.html" "folder-open" }}</span>
     {{ range .Params.categories }}
+      {{ if eq . "Projects" }}
+      <a href="{{ "projects" | relURL }}/">{{ . }}</a>&nbsp;
+      {{ else }}
       <a href="{{ "categories" | relURL }}/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ if .Params.tags }}

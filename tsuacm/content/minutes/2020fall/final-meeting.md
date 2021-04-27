@@ -3,6 +3,7 @@ title: Final Meeting of Fall 2020
 date: 2020-11-16
 author: Brandon Ingli
 categories: ["Minutes"]
+group: "ACM" # ACM, Web Devs, Game Devs, etc.
 tags: []
 draft: false
 # description:

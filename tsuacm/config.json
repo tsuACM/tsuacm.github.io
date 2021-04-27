@@ -14,7 +14,8 @@
     "category": "categories",
     "tag": "tags",
     "series": "series",
-    "Project Type": "proj_type"
+    "Project Type": "proj_type",
+    "Groups": "group"
   },
   "markup": {
     "goldmark": {
@@ -24,8 +25,9 @@
     }
   },
   "permalinks":{
-    "minutes": "/minutes/:year/:month/:day",
-    "proj_type": "/projects/types/:slug/"
+    "minutes": "/minutes/:year/:month/:day/:slug",
+    "proj_type": "/projects/types/:slug/",
+    "group": "/groups/:slug/"
   },
   "params": {
     "favicon": "/images/tru_acm_diamond.png",

@@ -5,6 +5,7 @@
         <span class="meta-post">
           {{ if .Params.proj_semester }}<span class="icon calIcon">{{ partial "fontawesome.html" "calendar-alt" }}</span>{{ .Params.proj_semester }} <br> {{ end }}
           {{ if .Params.author }}<span class="icon authorIcon">{{ partial "fontawesome.html" "user-alt" }}</span> {{ .Params.author }} <br> {{ end }}
+          {{ if .Params.group }}<span class="icon groupIcon">{{ partial "fontawesome.html" "users" }}</span> <a href="{{ "groups" | relURL }}/{{ .Params.group | urlize }}/">{{ .Params.group }}</a> <br> {{ end }}
           {{ if .Params.proj_type }}<span class="icon folderIcon">{{ partial "fontawesome.html" "folder-open" }}</span><a href="{{ "projects/types" | relURL }}/{{ .Params.proj_type | urlize }}/">{{ .Params.proj_type }}</a> <br> {{ end }}
           {{ if .Params.proj_link }}<span class="icon linkIcon">{{ partial "fontawesome.html" "link" }}</span>{{ partial "externallink.html" (dict "url" .Params.proj_link "text" .Params.proj_link "title" .Params.proj_link) }} <br> {{ end }}
           {{ if .Params.github_link }}<span class="icon linkIcon">{{ partial "fontawesome.html" "github" }}</span>{{ partial "externallink.html" (dict "url" .Params.github_link "text" .Params.github_link "title" .Params.github_link) }} <br> {{ end }}
